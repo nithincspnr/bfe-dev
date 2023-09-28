@@ -1,3 +1,3 @@
-# bfe-dev
+# BFE-dev
 
-My Solutions to [bigfrontend.dev](https://bigfrontend.dev/) problems that I tried.
+My Solutions to [bigfrontend.dev](https://bigfrontend.dev/) problems.

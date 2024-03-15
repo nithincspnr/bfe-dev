@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two column</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+        }
+
+        .container {
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .left {
+            background-color: #f44336;
+            flex-grow: 1;
+            flex-shrink: 1;
+            min-width: 100px;
+            /* flex-basis: 100px; */
+            /* height: 100%; */
+        }
+
+        .right {
+            background-color: #2973af;
+            flex-grow: 3;
+            flex-shrink: 1;
+            /* flex-basis: auto; */
+            /* height: 100%; */
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+
+</html>

@@ -34,6 +34,14 @@ function curry(fn) {
   };
 }
 
+/**
+ * Logic for combineArgs method
+ * [1, _] , [2, 3, 4]
+ * Steps
+ * [1, 2] , [3, 4] The _ is removed
+ * reduce method on first args,
+ * check if the each item is equal to _ then pick element from nextArgs and so...
+ */
 function combineArgs(args, nextArgs) {
   const trueArgs = args.reduce((acc, value) => {
     const nextArg =
@@ -44,5 +52,3 @@ function combineArgs(args, nextArgs) {
   });
   return [...trueArgs, ...nextArgs];
 }
-
-curry.placeholder = Symbol();

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input[type="checkbox"] {
+        /* The appearance CSS property is used to display UI elements with
+        platform-specific styling, based on the operating system's theme. */
+        appearance: none;
+        /* creates circle with gray color */
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        background-color: gray;
+    }
+
+    input[type="checkbox"]:checked {
+        background-color: green;
+    }
+</style>
+
+<body>
+    <label class="my-checkbox">
+        <input type="checkbox" />
+        <span>a checkbox</span>
+    </label>
+</body>
+
+</html>
